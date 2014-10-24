@@ -1,6 +1,6 @@
 {
   "name": "Crypto",
-  "version": "1.0",
+  "version": "1.0.2",
   "description": "Testing RSA and AES for node-rsa.",
   "repository": {
     "type": "git",
