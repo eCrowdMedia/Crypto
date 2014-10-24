@@ -1,0 +1,23 @@
+{
+	"name": "eCrowdMedia/Crypto",
+	"description": "Testing RSA and AES for node-rsa.",
+	"type": "project",
+	"keywords": ["readmoo","ecrowdmedia","crypto"],
+	"homepage": "https://readmoo.com/",
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Willy",
+			"email": "willy@ecrowdmedia.com",
+			"homepage": "http://www.ecrowdmedia.com/#portfolio",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "tech@readmoo.com"
+	},
+	"require": {
+		"php": ">=5.3.3",
+		"phpseclib/phpseclib": "0.3.*@dev"
+	}
+}
