@@ -1,5 +1,5 @@
 <?php
-	require '../../vendor/autoload.php';
+	require 'vendor/autoload.php';
 	$kpu =	"-----BEGIN PUBLIC KEY-----\n" .
 			"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCIAuolYD2It7Va6XgGDocgiw19\n" .
 			"mt5OAHoK5aNaEyjfpdEKKaNgjs1SOZ0FLtwjUmdSUYcko363xh/yTpmFLn4jqmq+\n" .
