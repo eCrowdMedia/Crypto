@@ -29,6 +29,7 @@ var outputBuffer = decipher.output;
 var padding_length = outputBuffer.last();
 var plaintextBuffer = outputBuffer.truncate(padding_length);
 console.log('Plaintext length (without ' + padding_length + ' bytes padding): ' + plaintextBuffer.length());
+fs.writeFileSync('data/Cover.jpg', plaintextBuffer.data, 'binary');
 
 var debugBuffer = plaintextBuffer.truncate(plaintextBuffer.length() - 40);
 console.log('Plaintext in Hex: ' + debugBuffer.toHex());
