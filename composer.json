@@ -18,6 +18,6 @@
 	},
 	"require": {
 		"php": ">=5.3.3",
-		"phpseclib/phpseclib": "0.3.*@dev"
+		"phpseclib/phpseclib": "1.0.2"
 	}
 }
