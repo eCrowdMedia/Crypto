@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uid" version="3.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:identifier id="uid">6ba841a1-826a-498e-acb2-0823c5a7b3f7</dc:identifier>
+    <dc:language>en</dc:language>
+    <dc:title>Readium Licensed Content Protection (LCP) 1.0</dc:title>
+    <meta property="dcterms:modified">2016-09-22T15:57:40Z</meta>
+  </metadata>
+  <manifest>
+    <item href="nav.xhtml" id="toc" media-type="application/xhtml+xml" properties="nav"/>
+    <item href="ReadiumLicensedContentProtection(LCP)1.0.xhtml" id="main" media-type="application/xhtml+xml"/>
+    <item href="images/image00.png" id="image00.png" media-type="image/png"/>
+  </manifest>
+  <spine>
+    <itemref idref="main"/>
+  </spine>
+</package>
