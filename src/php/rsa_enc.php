@@ -2,12 +2,6 @@
     require 'vendor/autoload.php';
     use phpseclib\Crypt\RSA;
 
-    $loader = new \Composer\Autoload\ClassLoader();
-    $loader->addPsr4('phpseclib\\', 'vendor/phpseclib/phpseclib/phpseclib/');
-/*sd($loader);
-    $loader->register();
-*/
-
     $kpu =	"-----BEGIN PUBLIC KEY-----\n" .
             "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCIAuolYD2It7Va6XgGDocgiw19\n" .
             "mt5OAHoK5aNaEyjfpdEKKaNgjs1SOZ0FLtwjUmdSUYcko363xh/yTpmFLn4jqmq+\n" .
@@ -15,7 +9,7 @@
             "TqawvGyUQjYjnsUVuQIDAQAB\n" .
             "-----END PUBLIC KEY-----\n";
     $rsa = new RSA();
-    $rsa->setEncryptionMode(CRYPT_RSA_ENCRYPTION_PKCS1);
+    $rsa->setEncryptionMode(RSA::ENCRYPTION_PKCS1);
     $rsa->loadKey($kpu);
     $plaintext = '1234567890123456';
     $ciphertext = base64_encode($rsa->encrypt($plaintext));
