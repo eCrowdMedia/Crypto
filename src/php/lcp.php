@@ -1,5 +1,6 @@
 <?php
     require 'vendor/autoload.php';
+    use phpseclib\Crypt\AES;
 
     try {
         $base = 'data/lcp/';
@@ -72,7 +73,7 @@
         )) {
             throw new Exception('Only support AES CBC decryption');
         }
-        $aes = new Crypt_AES();
+        $aes = new AES();
 
         # Load 16 bytes IV
         $iv_length = 16;
