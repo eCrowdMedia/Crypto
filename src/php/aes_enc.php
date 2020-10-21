@@ -8,13 +8,7 @@
     // $plaintext_in_hex = '66554433221100998877665544332211';
     // $plaintext = pack('H*', $plaintext_in_hex);
     $plaintext = 'eCrowdMedia Inc. 2014 copywrite.';
-    $iv = mcrypt_create_iv(
-        mcrypt_get_iv_size(
-            MCRYPT_RIJNDAEL_128,
-            MCRYPT_MODE_CBC
-        ),
-        MCRYPT_RAND
-    );
+    $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length('AES-256-CBC'));
     $aes = new AES();
     $aes->setIV($iv);
     $aes->setKey($aes_key);
